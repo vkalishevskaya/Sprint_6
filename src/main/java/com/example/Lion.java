@@ -4,9 +4,11 @@ import java.util.List;
 
 public class Lion {
 
-    Feline feline;
-    public Lion(Feline feline) {
+    private Feline feline;
+    private Predator predator;
+    public Lion(Feline feline, Predator predator) {
         this.feline = feline;
+        this.predator = predator;
     }
 
     boolean hasMane;
