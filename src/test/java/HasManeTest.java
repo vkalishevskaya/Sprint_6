@@ -1,19 +1,16 @@
-import com.example.Feline;
+
 import com.example.Lion;
-import com.example.Predator;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import org.mockito.Spy;
+
 
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
 public class HasManeTest {
-    @Spy
-    protected Feline feline;
-    @Spy
-    Predator predator;
+
+
 
     private final String lionSex;
     private final boolean expected;
