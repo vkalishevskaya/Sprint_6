@@ -18,7 +18,6 @@ public class LionTest {
     Predator predator;
 
 
-
     @Test
     public void getKittens() {
         Lion lion = new Lion(feline, predator);
@@ -26,6 +25,7 @@ public class LionTest {
         int kittens = lion.getKittens();
         assertEquals(1, kittens);
     }
+
 
     @Test
     public void getFood() throws Exception {
@@ -35,4 +35,8 @@ public class LionTest {
         assertEquals("[Животные, Птицы, Рыба]", getFood);
     }
 
+    @Test
+    public void lionSexError() {
+        assertThrows(Exception.class, () -> new Lion("Лев"));
+    }
 }
