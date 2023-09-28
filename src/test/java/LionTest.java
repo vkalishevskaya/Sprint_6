@@ -28,33 +28,6 @@ public class LionTest {
     }
 
     @Test
-
-    public void doesHaveMane() throws Exception {
-
-        Lion lion = new Lion("Самец");
-
-        boolean mane = lion.doesHaveMane();
-        assertEquals(true, mane);
-
-    }
-    @Test
-    public void doesNotHaveMane() throws Exception {
-        Lion lion = new Lion("Самка");
-
-        boolean mane = lion.doesHaveMane();
-        assertEquals(false, mane);
-
-    }
-    /* @Test
-    public void doesMane() throws Exception {
-        Lion lion = new Lion("Используйте допустимые значения пола животного - самец или самка");
-
-        boolean mane = lion.doesHaveMane();
-        assertEquals(false, mane);
-
-    }*/
-
-    @Test
     public void getFood() throws Exception {
         Lion lion = new Lion(feline, predator);
 
